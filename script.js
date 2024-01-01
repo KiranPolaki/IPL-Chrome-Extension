@@ -14,7 +14,8 @@ fetch(urlSched, options)
   .then((data) => {
     console.log(data);
     // if (data.status != "success") return;
+    const matchList = data.matchScheduleMap;
     if (!matchList) return [];
-    const matchList = data.data;
     console.log(matchList);
+    matchList.map;
   });
